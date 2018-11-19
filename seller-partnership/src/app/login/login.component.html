@@ -1,0 +1,15 @@
+
+<div class="layout-column layout-align-center-center">
+  <div class="layout-column layout-align-center-center login-box" [style.margin-top.px]='90' [style.width.px]='870' [style.height.px]='510'>
+      <mat-form-field class="layout-wrap" floatPlaceholder="never" [style.width.px]='350' [style.height.px]='35' [style.margin-bottom.px]='20' [style.font-size.px]='18'>
+          <input matInput value="" placeholder="Username" style="text-indent: 12px;"  name="userName" [(ngModel)]="userData['name']">
+        </mat-form-field>
+        <mat-form-field class="layout-wrap" floatPlaceholder="never" [style.width.px]='350' [style.height.px]='35' [style.margin-bottom.px]='13' [style.font-size.px]='18'>
+            <input matInput value="" placeholder="Password" type="password" style="text-indent: 12px;" [style.width.px]='350' [style.height.px]='35' name="password" [(ngModel)]="userData['pwd']">
+          </mat-form-field>
+
+          <div class="layout-column layout-align-center-center" [style.margin-top.px]='100'>
+              <button mat-button class="md-raised login-btn-btn" type="submit" (click)="onLogin()">Login</button>
+          </div>
+  </div>
+</div>
